@@ -1,0 +1,9 @@
+{
+	"name": "GithubFactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "65ed51f6-429f-4bc9-a305-98782737957d",
+		"tenantId": "a1a84074-047c-4f10-84db-97d5e046cbba"
+	}
+}
