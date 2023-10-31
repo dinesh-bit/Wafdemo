@@ -1,0 +1,49 @@
+{
+	"name": "DelimitedText3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "customer_arr.json",
+				"folderPath": "Input",
+				"container": "adf"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "{\"customerid\":1",
+				"type": "String"
+			},
+			{
+				"name": "\"customername\":\"UserA\"",
+				"type": "String"
+			},
+			{
+				"name": "\"registered\":true",
+				"type": "String"
+			},
+			{
+				"name": "\"courses\":[\"AZ-900\"",
+				"type": "String"
+			},
+			{
+				"name": "AZ-500",
+				"type": "String"
+			},
+			{
+				"name": "\"AZ-303\"]}",
+				"type": "String"
+			}
+		]
+	}
+}
